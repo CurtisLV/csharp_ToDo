@@ -37,6 +37,8 @@
             this.saveBtn = new System.Windows.Forms.Button();
             this.deleteBtn = new System.Windows.Forms.Button();
             this.editBtn = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -85,9 +87,9 @@
             // 
             this.newBtn.BackColor = System.Drawing.Color.Azure;
             this.newBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.newBtn.Location = new System.Drawing.Point(14, 192);
+            this.newBtn.Location = new System.Drawing.Point(12, 192);
             this.newBtn.Name = "newBtn";
-            this.newBtn.Size = new System.Drawing.Size(253, 33);
+            this.newBtn.Size = new System.Drawing.Size(255, 33);
             this.newBtn.TabIndex = 5;
             this.newBtn.Text = "New Item";
             this.newBtn.UseVisualStyleBackColor = false;
@@ -98,7 +100,7 @@
             this.saveBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.saveBtn.Location = new System.Drawing.Point(836, 192);
             this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Size = new System.Drawing.Size(253, 33);
+            this.saveBtn.Size = new System.Drawing.Size(255, 33);
             this.saveBtn.TabIndex = 6;
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = false;
@@ -125,12 +127,22 @@
             this.editBtn.Text = "Edit Item";
             this.editBtn.UseVisualStyleBackColor = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(14, 243);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(1077, 382);
+            this.dataGridView1.TabIndex = 9;
+            // 
             // ToDoListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1103, 637);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.editBtn);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.saveBtn);
@@ -142,6 +154,7 @@
             this.Controls.Add(this.titleTextBox);
             this.Name = "ToDoListForm";
             this.Text = "ToDo List";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,5 +171,6 @@
         private Button saveBtn;
         private Button deleteBtn;
         private Button editBtn;
+        private DataGridView dataGridView1;
     }
 }
