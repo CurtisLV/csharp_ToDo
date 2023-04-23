@@ -37,8 +37,8 @@
             this.saveBtn = new System.Windows.Forms.Button();
             this.deleteBtn = new System.Windows.Forms.Button();
             this.editBtn = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.toDoListView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.toDoListView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -127,14 +127,16 @@
             this.editBtn.Text = "Edit Item";
             this.editBtn.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // toDoListView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 243);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1077, 382);
-            this.dataGridView1.TabIndex = 9;
+            this.toDoListView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.toDoListView.BackgroundColor = System.Drawing.Color.White;
+            this.toDoListView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.toDoListView.Location = new System.Drawing.Point(14, 243);
+            this.toDoListView.Name = "toDoListView";
+            this.toDoListView.RowTemplate.Height = 25;
+            this.toDoListView.Size = new System.Drawing.Size(1077, 382);
+            this.toDoListView.TabIndex = 9;
             // 
             // ToDoListForm
             // 
@@ -142,7 +144,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1103, 637);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.toDoListView);
             this.Controls.Add(this.editBtn);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.saveBtn);
@@ -154,7 +156,7 @@
             this.Controls.Add(this.titleTextBox);
             this.Name = "ToDoListForm";
             this.Text = "ToDo List";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toDoListView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,6 +173,6 @@
         private Button saveBtn;
         private Button deleteBtn;
         private Button editBtn;
-        private DataGridView dataGridView1;
+        private DataGridView toDoListView;
     }
 }
