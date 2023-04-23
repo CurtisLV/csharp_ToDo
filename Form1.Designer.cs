@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.titleTextBox = new System.Windows.Forms.TextBox();
+            this.descriptionTextBox = new System.Windows.Forms.TextBox();
+            this.descriptionLabel = new System.Windows.Forms.Label();
+            this.titleLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -45,37 +45,37 @@
             this.label1.Text = "ToDo List";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox1
+            // titleTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 81);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1079, 23);
-            this.textBox1.TabIndex = 1;
+            this.titleTextBox.Location = new System.Drawing.Point(12, 81);
+            this.titleTextBox.Name = "titleTextBox";
+            this.titleTextBox.Size = new System.Drawing.Size(1079, 23);
+            this.titleTextBox.TabIndex = 1;
             // 
-            // textBox2
+            // descriptionTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 133);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(1079, 23);
-            this.textBox2.TabIndex = 2;
+            this.descriptionTextBox.Location = new System.Drawing.Point(12, 133);
+            this.descriptionTextBox.Name = "descriptionTextBox";
+            this.descriptionTextBox.Size = new System.Drawing.Size(1079, 23);
+            this.descriptionTextBox.TabIndex = 2;
             // 
-            // label2
+            // descriptionLabel
             // 
-            this.label2.Location = new System.Drawing.Point(12, 107);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1079, 23);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Description";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.descriptionLabel.Location = new System.Drawing.Point(12, 107);
+            this.descriptionLabel.Name = "descriptionLabel";
+            this.descriptionLabel.Size = new System.Drawing.Size(1079, 23);
+            this.descriptionLabel.TabIndex = 3;
+            this.descriptionLabel.Text = "Description";
+            this.descriptionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label3
+            // titleLabel
             // 
-            this.label3.Location = new System.Drawing.Point(12, 55);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1079, 23);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Title:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.titleLabel.Location = new System.Drawing.Point(12, 55);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(1079, 23);
+            this.titleLabel.TabIndex = 4;
+            this.titleLabel.Text = "Title:";
+            this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ToDoListForm
             // 
@@ -83,10 +83,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1103, 637);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.titleLabel);
+            this.Controls.Add(this.descriptionLabel);
+            this.Controls.Add(this.descriptionTextBox);
+            this.Controls.Add(this.titleTextBox);
             this.Controls.Add(this.label1);
             this.Name = "ToDoListForm";
             this.Text = "ToDo List";
@@ -98,9 +98,9 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Label label2;
-        private Label label3;
+        private TextBox titleTextBox;
+        private TextBox descriptionTextBox;
+        private Label descriptionLabel;
+        private Label titleLabel;
     }
 }
