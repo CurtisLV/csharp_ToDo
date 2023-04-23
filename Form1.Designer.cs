@@ -33,6 +33,7 @@
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.descriptionLabel = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
+            this.newButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -77,12 +78,24 @@
             this.titleLabel.Text = "Title:";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // newButton
+            // 
+            this.newButton.BackColor = System.Drawing.Color.Azure;
+            this.newButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.newButton.Location = new System.Drawing.Point(12, 192);
+            this.newButton.Name = "newButton";
+            this.newButton.Size = new System.Drawing.Size(250, 33);
+            this.newButton.TabIndex = 5;
+            this.newButton.Text = "New Item";
+            this.newButton.UseVisualStyleBackColor = false;
+            // 
             // ToDoListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1103, 637);
+            this.Controls.Add(this.newButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.descriptionLabel);
@@ -102,5 +115,6 @@
         private TextBox descriptionTextBox;
         private Label descriptionLabel;
         private Label titleLabel;
+        private Button newButton;
     }
 }
