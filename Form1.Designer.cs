@@ -33,11 +33,13 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(74, 26);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.Size = new System.Drawing.Size(1079, 69);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "ToDo List";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ToDoListForm
             // 
