@@ -33,7 +33,10 @@
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.descriptionLabel = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
-            this.newButton = new System.Windows.Forms.Button();
+            this.newBtn = new System.Windows.Forms.Button();
+            this.saveBtn = new System.Windows.Forms.Button();
+            this.deleteBtn = new System.Windows.Forms.Button();
+            this.editBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -78,16 +81,49 @@
             this.titleLabel.Text = "Title:";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // newButton
+            // newBtn
             // 
-            this.newButton.BackColor = System.Drawing.Color.Azure;
-            this.newButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.newButton.Location = new System.Drawing.Point(12, 192);
-            this.newButton.Name = "newButton";
-            this.newButton.Size = new System.Drawing.Size(250, 33);
-            this.newButton.TabIndex = 5;
-            this.newButton.Text = "New Item";
-            this.newButton.UseVisualStyleBackColor = false;
+            this.newBtn.BackColor = System.Drawing.Color.Azure;
+            this.newBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.newBtn.Location = new System.Drawing.Point(14, 192);
+            this.newBtn.Name = "newBtn";
+            this.newBtn.Size = new System.Drawing.Size(253, 33);
+            this.newBtn.TabIndex = 5;
+            this.newBtn.Text = "New Item";
+            this.newBtn.UseVisualStyleBackColor = false;
+            // 
+            // saveBtn
+            // 
+            this.saveBtn.BackColor = System.Drawing.Color.Azure;
+            this.saveBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.saveBtn.Location = new System.Drawing.Point(836, 192);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(253, 33);
+            this.saveBtn.TabIndex = 6;
+            this.saveBtn.Text = "Save";
+            this.saveBtn.UseVisualStyleBackColor = false;
+            // 
+            // deleteBtn
+            // 
+            this.deleteBtn.BackColor = System.Drawing.Color.Azure;
+            this.deleteBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.deleteBtn.Location = new System.Drawing.Point(562, 192);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(253, 33);
+            this.deleteBtn.TabIndex = 7;
+            this.deleteBtn.Text = "Delete Item";
+            this.deleteBtn.UseVisualStyleBackColor = false;
+            // 
+            // editBtn
+            // 
+            this.editBtn.BackColor = System.Drawing.Color.Azure;
+            this.editBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.editBtn.Location = new System.Drawing.Point(288, 192);
+            this.editBtn.Name = "editBtn";
+            this.editBtn.Size = new System.Drawing.Size(253, 33);
+            this.editBtn.TabIndex = 8;
+            this.editBtn.Text = "Edit Item";
+            this.editBtn.UseVisualStyleBackColor = false;
             // 
             // ToDoListForm
             // 
@@ -95,7 +131,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1103, 637);
-            this.Controls.Add(this.newButton);
+            this.Controls.Add(this.editBtn);
+            this.Controls.Add(this.deleteBtn);
+            this.Controls.Add(this.saveBtn);
+            this.Controls.Add(this.newBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.descriptionLabel);
@@ -115,6 +154,9 @@
         private TextBox descriptionTextBox;
         private Label descriptionLabel;
         private Label titleLabel;
-        private Button newButton;
+        private Button newBtn;
+        private Button saveBtn;
+        private Button deleteBtn;
+        private Button editBtn;
     }
 }
