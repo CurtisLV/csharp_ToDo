@@ -40,28 +40,28 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1079, 69);
+            this.label1.Size = new System.Drawing.Size(1079, 65);
             this.label1.TabIndex = 0;
             this.label1.Text = "ToDo List";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // titleTextBox
             // 
-            this.titleTextBox.Location = new System.Drawing.Point(12, 81);
+            this.titleTextBox.Location = new System.Drawing.Point(12, 100);
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new System.Drawing.Size(1079, 23);
             this.titleTextBox.TabIndex = 1;
             // 
             // descriptionTextBox
             // 
-            this.descriptionTextBox.Location = new System.Drawing.Point(12, 133);
+            this.descriptionTextBox.Location = new System.Drawing.Point(12, 152);
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(1079, 23);
             this.descriptionTextBox.TabIndex = 2;
             // 
             // descriptionLabel
             // 
-            this.descriptionLabel.Location = new System.Drawing.Point(12, 107);
+            this.descriptionLabel.Location = new System.Drawing.Point(12, 126);
             this.descriptionLabel.Name = "descriptionLabel";
             this.descriptionLabel.Size = new System.Drawing.Size(1079, 23);
             this.descriptionLabel.TabIndex = 3;
@@ -70,7 +70,7 @@
             // 
             // titleLabel
             // 
-            this.titleLabel.Location = new System.Drawing.Point(12, 55);
+            this.titleLabel.Location = new System.Drawing.Point(12, 74);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(1079, 23);
             this.titleLabel.TabIndex = 4;
@@ -83,11 +83,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1103, 637);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.descriptionLabel);
             this.Controls.Add(this.descriptionTextBox);
             this.Controls.Add(this.titleTextBox);
-            this.Controls.Add(this.label1);
             this.Name = "ToDoListForm";
             this.Text = "ToDo List";
             this.ResumeLayout(false);
