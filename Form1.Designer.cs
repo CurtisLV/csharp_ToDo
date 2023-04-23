@@ -156,6 +156,7 @@
             this.Controls.Add(this.titleTextBox);
             this.Name = "ToDoListForm";
             this.Text = "ToDo List";
+            this.Load += new System.EventHandler(this.ToDoListForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.toDoListView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
