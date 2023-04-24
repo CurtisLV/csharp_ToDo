@@ -18,6 +18,10 @@ namespace csharp_ToDo
 
             todoList.Columns.Add("Title");
             todoList.Columns.Add("Description");
+
+            // Point our datagridview to data source
         }
+
+        private void toDoListView_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
     }
 }
