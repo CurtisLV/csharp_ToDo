@@ -36,11 +36,21 @@ namespace csharp_ToDo
             titleTextBox.Text = todoList.Rows[todoListView.CurrentCell.RowIndex].ItemArray[
                 0
             ].ToString();
+            descriptionTextBox.Text = todoList.Rows[todoListView.CurrentCell.RowIndex].ItemArray[
+                1
+            ].ToString();
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
-            //
+            try
+            {
+                //
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         private void saveBtn_Click(object sender, EventArgs e)
