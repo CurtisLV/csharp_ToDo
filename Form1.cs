@@ -45,7 +45,7 @@ namespace csharp_ToDo
         {
             try
             {
-                //
+                todoList.Rows[todoListView.CurrentCell.RowIndex].Delete();
             }
             catch (Exception ex)
             {
