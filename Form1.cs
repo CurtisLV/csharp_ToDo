@@ -57,7 +57,9 @@ namespace csharp_ToDo
         {
             if (isEditing)
             {
-                //
+                todoList.Rows[todoListView.CurrentCell.RowIndex]["Title"] = titleTextBox.Text;
+                todoList.Rows[todoListView.CurrentCell.RowIndex]["Description"] =
+                    descriptionTextBox.Text;
             }
             else
             {
