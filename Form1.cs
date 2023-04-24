@@ -61,15 +61,18 @@ namespace csharp_ToDo
                 todoList.Rows[todoListView.CurrentCell.RowIndex]["Description"] =
                     descriptionTextBox.Text;
             }
-            else
+            else if (titleTextBox.Text != "" || descriptionTextBox.Text != "")
             {
                 todoList.Rows.Add(titleTextBox.Text, descriptionTextBox.Text);
             }
-
-            // Clear fields
-            titleTextBox.Text = "";
-            descriptionTextBox.Text = "";
-            isEditing = false;
+            else
+            {
+                MessageBox.Show(
+                    "Title or Description is Empty! Add before saving!",
+                    "Empty field detected!",
+                    MessageBoxButtons.OK
+                );
+            }
         }
     }
 }
