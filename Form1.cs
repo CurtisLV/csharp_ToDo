@@ -31,14 +31,17 @@ namespace csharp_ToDo
 
         private void editBtn_Click(object sender, EventArgs e)
         {
-            isEditing = true;
-            // fill text fields with data from
-            titleTextBox.Text = todoList.Rows[todoListView.CurrentCell.RowIndex].ItemArray[
-                0
-            ].ToString();
-            descriptionTextBox.Text = todoList.Rows[todoListView.CurrentCell.RowIndex].ItemArray[
-                1
-            ].ToString();
+            if (todoListView.CurrentCell != null)
+            {
+                isEditing = true;
+                // fill text fields with data from
+                titleTextBox.Text = todoList.Rows[todoListView.CurrentCell.RowIndex].ItemArray[
+                    0
+                ].ToString();
+                descriptionTextBox.Text = todoList.Rows[
+                    todoListView.CurrentCell.RowIndex
+                ].ItemArray[1].ToString();
+            }
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
