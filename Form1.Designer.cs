@@ -96,6 +96,7 @@
             this.newBtn.TabIndex = 5;
             this.newBtn.Text = "New Item";
             this.newBtn.UseVisualStyleBackColor = false;
+            this.newBtn.Click += new System.EventHandler(this.newBtn_Click);
             // 
             // saveBtn
             // 
@@ -108,6 +109,7 @@
             this.saveBtn.TabIndex = 6;
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = false;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // deleteBtn
             // 
@@ -120,6 +122,7 @@
             this.deleteBtn.TabIndex = 7;
             this.deleteBtn.Text = "Delete Item";
             this.deleteBtn.UseVisualStyleBackColor = false;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
             // editBtn
             // 
@@ -132,6 +135,7 @@
             this.editBtn.TabIndex = 8;
             this.editBtn.Text = "Edit Item";
             this.editBtn.UseVisualStyleBackColor = false;
+            this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
             // 
             // todoListView
             // 

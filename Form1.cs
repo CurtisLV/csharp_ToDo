@@ -22,5 +22,25 @@ namespace csharp_ToDo
             // Point our datagridview to data source
             todoListView.DataSource = todoList;
         }
+
+        private void newBtn_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void editBtn_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void saveBtn_Click(object sender, EventArgs e)
+        {
+            //
+        }
     }
 }
