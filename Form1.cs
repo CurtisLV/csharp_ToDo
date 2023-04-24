@@ -14,7 +14,10 @@ namespace csharp_ToDo
 
         private void ToDoListForm_Load(object sender, EventArgs e)
         {
-            //
+            // Create columns
+
+            todoList.Columns.Add("Title");
+            todoList.Columns.Add("Description");
         }
     }
 }
