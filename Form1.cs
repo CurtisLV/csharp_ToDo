@@ -45,7 +45,10 @@ namespace csharp_ToDo
         {
             try
             {
-                todoList.Rows[todoListView.CurrentCell.RowIndex].Delete();
+                if (todoListView.CurrentCell != null)
+                {
+                    todoList.Rows[todoListView.CurrentCell.RowIndex].Delete();
+                }
             }
             catch (Exception ex)
             {
@@ -62,7 +65,7 @@ namespace csharp_ToDo
                     descriptionTextBox.Text;
                 ClearFields();
             }
-            else if (titleTextBox.Text != "" || descriptionTextBox.Text != "")
+            else if (titleTextBox.Text != "" && descriptionTextBox.Text != "")
             {
                 todoList.Rows.Add(titleTextBox.Text, descriptionTextBox.Text);
                 ClearFields();
@@ -70,7 +73,7 @@ namespace csharp_ToDo
             else
             {
                 MessageBox.Show(
-                    "Title or Description is Empty! Add before saving!",
+                    "Title and/or Description is Empty! Add before saving!",
                     "Empty field detected!",
                     MessageBoxButtons.OK
                 );
