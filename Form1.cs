@@ -31,7 +31,11 @@ namespace csharp_ToDo
 
         private void editBtn_Click(object sender, EventArgs e)
         {
-            //
+            isEditing = true;
+            // fill text fields with data from
+            titleTextBox.Text = todoList.Rows[todoListView.CurrentCell.RowIndex].ItemArray[
+                0
+            ].ToString();
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
