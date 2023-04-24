@@ -55,7 +55,19 @@ namespace csharp_ToDo
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
-            //
+            if (isEditing)
+            {
+                //
+            }
+            else
+            {
+                todoList.Rows.Add(titleTextBox.Text, descriptionTextBox.Text);
+            }
+
+            // Clear fields
+            titleTextBox.Text = "";
+            descriptionTextBox.Text = "";
+            isEditing = false;
         }
     }
 }
