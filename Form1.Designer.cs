@@ -102,7 +102,7 @@
             // 
             this.saveBtn.BackColor = System.Drawing.Color.Azure;
             this.saveBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.saveBtn.Location = new System.Drawing.Point(955, 256);
+            this.saveBtn.Location = new System.Drawing.Point(329, 256);
             this.saveBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(291, 44);
@@ -115,7 +115,7 @@
             // 
             this.deleteBtn.BackColor = System.Drawing.Color.Azure;
             this.deleteBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.deleteBtn.Location = new System.Drawing.Point(642, 256);
+            this.deleteBtn.Location = new System.Drawing.Point(644, 256);
             this.deleteBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(289, 44);
@@ -128,7 +128,7 @@
             // 
             this.editBtn.BackColor = System.Drawing.Color.Azure;
             this.editBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.editBtn.Location = new System.Drawing.Point(329, 256);
+            this.editBtn.Location = new System.Drawing.Point(957, 256);
             this.editBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.editBtn.Name = "editBtn";
             this.editBtn.Size = new System.Drawing.Size(289, 44);
