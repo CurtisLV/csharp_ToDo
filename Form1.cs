@@ -25,7 +25,8 @@ namespace csharp_ToDo
 
         private void newBtn_Click(object sender, EventArgs e)
         {
-            //
+            titleTextBox.Text = "";
+            descriptionTextBox.Text = "";
         }
 
         private void editBtn_Click(object sender, EventArgs e)
