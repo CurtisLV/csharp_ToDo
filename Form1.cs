@@ -60,10 +60,12 @@ namespace csharp_ToDo
                 todoList.Rows[todoListView.CurrentCell.RowIndex]["Title"] = titleTextBox.Text;
                 todoList.Rows[todoListView.CurrentCell.RowIndex]["Description"] =
                     descriptionTextBox.Text;
+                ClearFields();
             }
             else if (titleTextBox.Text != "" || descriptionTextBox.Text != "")
             {
                 todoList.Rows.Add(titleTextBox.Text, descriptionTextBox.Text);
+                ClearFields();
             }
             else
             {
@@ -73,6 +75,14 @@ namespace csharp_ToDo
                     MessageBoxButtons.OK
                 );
             }
+        }
+
+        void ClearFields()
+        {
+            // Clear fields
+            titleTextBox.Text = "";
+            descriptionTextBox.Text = "";
+            isEditing = false;
         }
     }
 }
