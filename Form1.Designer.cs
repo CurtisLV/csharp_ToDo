@@ -145,7 +145,6 @@
             this.todoListView.RowTemplate.Height = 25;
             this.todoListView.Size = new System.Drawing.Size(1231, 509);
             this.todoListView.TabIndex = 9;
-            this.todoListView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.toDoListView_CellContentClick);
             // 
             // ToDoListForm
             // 
